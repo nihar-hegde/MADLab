@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LogInActivity extends AppCompatActivity {
     EditText emailEditText,passwordEditText;
@@ -31,6 +32,10 @@ public class LogInActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else{
+                    Toast.makeText(LogInActivity.this,"Invalid Credentials",Toast.LENGTH_LONG).show();
+                }
+                counter--;
+                if(counter==0){
                     
                 }
             }
