@@ -37,7 +37,7 @@ public class LogInActivity extends AppCompatActivity {
                 counter--;
                 if(counter==0){
                     Toast.makeText(getBaseContext(),"Failed Login Attempts",Toast.LENGTH_LONG).show();
-                    loginBtn.setEnabled(false);
+                    loginBtn.setEnabled(false);//https://github.com/nihar-hegde/MADLab.git
                 }
             }
         });
